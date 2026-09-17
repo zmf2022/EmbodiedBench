@@ -86,8 +86,11 @@ The Isaac suite auto-accepts the NVIDIA Omniverse EULA, so the run is headless w
 ### Run without a policy
 
 ```bash
-# Run an empty episode with random actions
+# Run an empty episode with random actions (headless)
 python examples/run_empty.py --headless
+
+# Run with GUI (Isaac Sim 6 requires --visualizer kit)
+python examples/run_empty.py --visualizer kit
 
 # Same, with a friction override, and read back what PhysX holds (docs/physics.md)
 python examples/run_empty.py --task BananaInBowlTask --headless --friction 0.5

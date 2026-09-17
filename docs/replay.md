@@ -10,6 +10,12 @@ Replay the bundled demonstration:
 python examples/run_recorded.py --headless
 ```
 
+Replay with GUI (Isaac Sim 6 requires `--visualizer kit`):
+
+```bash
+python examples/run_recorded.py --visualizer kit
+```
+
 Replay your own recording:
 
 ```bash

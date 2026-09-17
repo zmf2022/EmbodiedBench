@@ -10,20 +10,20 @@ executing full episodes. Useful for quick validation of environment setup and
 configuration without running policies. If no policy or tag is specified, it will run all tasks in the spatial tag.
 
 Usage:
-    Basic usage:
-    $ python run_empty.py --headless[optional]
+    Run with GUI (Isaac Sim 6 requires --visualizer kit):
+    $ python run_empty.py --visualizer kit
 
-    Basic usage with specific task:
-    $ python run_empty.py --task PickCubeTask
+    Run with GUI and specific task:
+    $ python run_empty.py --visualizer kit --task PickCubeTask
 
     Test multiple tasks:
-    $ python run_empty.py --task PickCubeTask PlaceCubeTask
+    $ python run_empty.py --visualizer kit --task PickCubeTask PlaceCubeTask
 
     Test a tag:
-    $ python run_empty.py --tag spatial
+    $ python run_empty.py --visualizer kit --tag spatial
 
     Run headless (no rendering):
-    $ python run_empty.py --task MyTask --headless
+    $ python run_empty.py --headless
 
 Requirements:
     - Task must be registered in the environment factory

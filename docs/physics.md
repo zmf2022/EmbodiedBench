@@ -100,6 +100,8 @@ or a recording that predates P79.
 --friction 0.5` boots one env, steps it with zero actions and leaves the two files under
 `output/run_empty_env/BananaInBowlTask*/`.
 
+For GUI mode (Isaac Sim 6), use `--visualizer kit` instead of `--headless`.
+
 **Robot label.** A robot cfg names its pad bodies with the `friction_bodies` label
 (assigned after the class, like `ee_recorder_bodies`; see
 [robots.md](robots.md#label-assignment-rules)):

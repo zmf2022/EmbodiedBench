@@ -354,7 +354,7 @@ Scene settled and screenshot generated!
 
 **2. Verify in simulation** — run the empty demo (no policy) once you have a task:
 ```bash
-python examples/run_empty.py --task <TaskClassName>
+python examples/run_empty.py --visualizer kit --task <TaskClassName>
 ```
 
 ---

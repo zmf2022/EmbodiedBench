@@ -10,14 +10,14 @@ between open and closed every `--toggle-every` steps. Useful for sanity-
 checking the gripper action path on a new robot/scene.
 
 Usage:
-    Basic usage (default task: BananaInBowlTask):
-    $ python examples/run_gripper_toggle.py
+    Run with GUI (Isaac Sim 6 requires --visualizer kit):
+    $ python examples/run_gripper_toggle.py --visualizer kit
 
     Specific task:
-    $ python examples/run_gripper_toggle.py --task RubiksCubeTask
+    $ python examples/run_gripper_toggle.py --visualizer kit --task RubiksCubeTask
 
     Headless (no viewer, no on-screen rendering):
-    $ python examples/run_gripper_toggle.py --task RubiksCubeTask --headless
+    $ python examples/run_gripper_toggle.py --headless --task RubiksCubeTask
 
 Output:
     Per-env videos saved to output/run_gripper_toggle/<task_env>/<instruction>[_envN][_viewport].mp4

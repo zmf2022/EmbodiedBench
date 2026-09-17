@@ -9,17 +9,17 @@ This script replays previously recorded robot trajectories to verify task behavi
 subtask progress tracking, and environment consistency.
 
 Usage:
-    Basic usage with default task:
-    $ python run_recorded.py
+    Run with GUI (Isaac Sim 6 requires --visualizer kit):
+    $ python run_recorded.py --visualizer kit
 
     Specify a custom task:
-    $ python run_recorded.py --task RubiksCubeOrBananaTask
+    $ python run_recorded.py --visualizer kit --task RubiksCubeOrBananaTask
 
     Run headless (no rendering):
-    $ python run_recorded.py --task MyTask --headless
+    $ python run_recorded.py --headless
 
     Replay an episode straight from an eval output folder:
-    $ python run_recorded.py --task MyTask --recorded-data-folder output/<run_folder> --file run_0.hdf5 --episode 2
+    $ python run_recorded.py --visualizer kit --task MyTask --recorded-data-folder output/<run_folder> --file run_0.hdf5 --episode 2
 
 Requirements:
     - Recorded data must exist at: <recorded-data-folder>/<task>/<file>

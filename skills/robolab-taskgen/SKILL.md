@@ -335,7 +335,7 @@ python robolab/tasks/_utils/generate_task_metadata.py \
 
 **3. Test the task in simulation** — run the empty demo (no policy) to verify the scene loads and terminations work:
 ```bash
-python examples/run_empty.py --task <TaskClassName>
+python examples/run_empty.py --visualizer kit --task <TaskClassName>
 ```
 
 See [Task Libraries](../../docs/task_libraries.md) for metadata details and [Environment Registration](../../docs/environment_registration.md) for how to register and run your task with a policy.
